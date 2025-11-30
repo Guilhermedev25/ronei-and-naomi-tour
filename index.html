@@ -1,85 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="R&N Tour - Your travel agency specialized in international destinations. Discover the world with us!">
-    <meta name="keywords" content="travel, tourism, travel agency, tour packages, R&N Tour">
-    <meta name="author" content="Guilherme A. Silva">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
-    <link rel="manifest" href="./site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/style.min.css">
-    <link rel="stylesheet" href="./style/responsive.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>R&N Tour - Your Travel Agency</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover what R&N Tour offers: travel packages, destination tips and all our social media links in one place. Contact us on WhatsApp, Instagram or email.">
+<meta property="og:title" content="R&N Tour | All Our Links">
+<meta property="og:description" content="See all our travel offers, social media and contact options in one place.">
+<meta property="og:image" content="https://www.roneiandnaomitour.com/assets/img/r&nlogo.jpg">
+<meta property="og:url" content="https://www.roneiandnaomitour.com/">
+<meta property="og:type" content="website">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>R&N Tour | Travel Deals, Destinations & Contacts</title>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <div class="background-image" role="presentation"></div>
-    <header>
-        <a href="./index.html" aria-label="Home page"><img class="logo" src="./img/logo.png" alt="R&N Tour logo"></a>
-        <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="navbar">
-            <i class="fas fa-bars"></i>
-        </button>
-        <nav id="navbar" role="navigation" aria-label="Main menu">
-            <a href="./index.html" class="active" aria-current="page">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
-        </nav>
-    </header>
-    
-    <main id="main-content">
-        <div class="carousel-container" role="region" aria-label="Destinations carousel">
-            <div class="carousel">
-                <div class="slide">
-                    <img src="./img/brazil.jpg" alt="Brazil landscape" loading="lazy">
-                    <div class="slide-content">
-                        <h3>Brazil</h3>
-                        <p>Discover the wonders of our country</p>
+     <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html"><img src="assets/img/r&nlogo.jpg" alt="nav__logo image" class="nav__logo-image"></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">Destinations</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+
+                <a href="https://api.whatsapp.com/send/?phone=447983512153&text&type=phone_number&app_absent=0" class="button button__header">Book Now</a>
+            </nav>
+        </header>
+
+        <main class="main">
+         <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Discover Your Next <br> Destination</h1>
+                        <p class="home__description">Plan your next trip with R&N Tour and explore incredible destinations around the world with personalized travel packages.</p>
+
+                        <a href="https://www.instagram.com/roneiandnaomitour/?igsh=MTAzMjA4b2x4dDBvNg%3D%3D&utm_source=qr#" class="button">View Packages</a>
+
+                    </div>   
+                    <div class="carousel" id="home-carousel">
+                        <div class="carousel__track">
+                            <div class="carousel__slide">
+                                <img src="./assets/img/brazil.jpg" alt="Brazil landscape">
+                            </div>
+                            <div class="carousel__slide">
+                                <img src="./assets/img/australia.jpg" alt="Australia landscape">
+                            </div>
+                            <div class="carousel__slide">
+                                <img src="./assets/img/eua.jpg" alt="United States landscape">
+                            </div>
+                            <div class="carousel__slide">
+                                <img src="./assets/img/thailand.jpg" alt="Thailand landscape">
+                            </div>
+                            <div class="carousel__slide">
+                                <img src="./assets/img/singapore.jpg" alt="Singapore landscape">
+                            </div>
+                        </div>
+                        
+
+                        <div class="carousel__nav" aria-hidden="false"></div>
                     </div>
                 </div>
-                <div class="slide">
-                    <img src="./img/australia.jpg" alt="Australia landscape" loading="lazy">
-                    <div class="slide-content">
-                        <h3>Australia</h3>
-                        <p>Explore the land of kangaroos</p>
+            </section>
+             <!--=============== ABOUT ===============-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <div class="about__data">
+                        <h2 class="section__title-center">Get To Know <br> R&N Tour</h2>
+                        <p class="about__description">We are a travel agency specialized in international destinations. From flights and hotels to unique experiences, we help you build the perfect itinerary with dedicated support before, during and after your trip.</p>
+                    </div>
+                    <img src="assets/img/r&nlogo.jpg" alt="Travel agent helping a couple choose a destination">
+                </div>
+            </section>
+
+            <!--=============== SECURITY ===============-->
+            <section class="security section container">
+                <div class="security__container grid">
+                    <div class="security__data">
+                        <h2 class="section__title-center">Your Safety Is <br> Important</h2>
+                        <p class="security__description">Your peace of mind comes first. We work only with trusted partners, offer travel insurance options and 24/7 assistance, so you can enjoy every moment of your trip safely.</p>
+                    </div>
+             <img src="assets/img/safety.jpg" alt="Traveler feeling safe while exploring a new city">
+                </div>
+            </section>
+            <!--=============== SERVICES ===============-->
+            <section class="services section container" id="services">
+                <h2 class="section__title">Featured Destinations <br> To Explore</h2>
+                <div class="services__container grid">
+                    <div class="services__data">
+                        <h3 class="services__subtitle">Brazil</h3>
+                        <img src="assets/img/brazil.jpg" alt="Brazil landscape">
+                        <p class="services__description">Discover the wonders of Brazil, from paradise beaches to vibrant cities full of culture and music.</p>
+                        <div>
+                            <a href="#" class="button button-link">View Packages</a>
+                        </div>
+                    </div>
+
+                    <div class="services__data">
+                        <h3 class="services__subtitle">Australia</h3>
+                        <img src="assets/img/australia.jpg" alt="Australia landscape">
+                        <p class="services__description">Explore the land of kangaroos, modern cities and unforgettable natural landscapes.</p>
+                        <div>
+                            <a href="#" class="button button-link">View Packages</a>
+                        </div>
+                    </div>
+
+                    <div class="services__data">
+                        <h3 class="services__subtitle">United States</h3>
+                        <img src="assets/img/eua.jpg" alt="United States landscape">
+                        <p class="services__description">Live the American dream visiting iconic routes, national parks and famous metropolitan areas.</p>
+                        <div>
+                            <a href="#" class="button button-link">View Packages</a>
+                        </div>
+                    </div>
+                    <div class="services__data">
+                        <h3 class="services__subtitle">London</h3>
+                        <img src="assets/img/london.jpg" alt="London landscape">
+                        <p class="services__description">Experience the capital of the United Kingdom, with its historic landmarks, museums and unique atmosphere.</p>
+                        <div>
+                            <a href="#" class="button button-link">View Packages</a>
+                        </div>
+                    </div>
+                      <div class="services__data">
+                        <h3 class="services__subtitle">Singapore</h3>
+                        <img src="assets/img/singapore.jpg" alt="singapore landscape">
+                        <p class="services__description">Discover the vibrant city-state of Singapore, known for its modern architecture, diverse culture, and delicious cuisine.</p>
+                        <div>
+                            <a href="#" class="button button-link">View Packages</a>
+                        </div>
+                    </div>
+                    <div class="services__data">
+                        <h3 class="services__subtitle">Thailand</h3>
+                        <img src="assets/img/thailand.jpg" alt="Thailand landscape">
+                        <p class="services__description">Experience the rich culture, beautiful beaches, and delicious cuisine of Thailand.</p>
+                        <div>
+                            <a href="#" class="button button-link">View Packages</a>
+                        </div>
                     </div>
                 </div>
-                <div class="slide">
-                    <img src="./img/eua.jpg" alt="United States landscape" loading="lazy">
-                    <div class="slide-content">
-                        <h3>United States</h3>
-                        <p>Live the American dream</p>
+            </section>
+            <!--=============== CONTACT US ===============-->
+            <section class="contact section container" id="contact">
+                <div class="contact__container grid">
+                    <div class="contact__content">
+                        <h2 class="section__title-center">Talk To Our Travel Experts <br> From Here</h2>
+                        <p class="contact__description">Contact us to create a personalized itinerary. You can write, call or visit our office and we will gladly help you plan your next adventure.</p>
+                    </div>
+
+                    <ul class="contact__content grid">
+                        <li class="contact__address">Telephone: <span class="contact__information">+44 7983 512153</span></li>
+                        <li class="contact__address">Email:  <span class="contact__information">contact@roneiandnaomitour.com</span></li>
+                        <li class="contact__address">Location: <span class="contact__information">London, United Kingdom</span></li>
+                    </ul>
+
+                    <div class="contact__content">
+                        <a href="https://api.whatsapp.com/send/?phone=447983512153&text&type=phone_number&app_absent=0" class="button">Contact Us</a>
                     </div>
                 </div>
-                <div class="slide">
-                    <img src="./img/london.jpg" alt="London landscape" loading="lazy">
-                    <div class="slide-content">
-                        <h3>London</h3>
-                        <p>Experience the capital of the United Kingdom</p>
-                    </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">R&amp;N Tour</a>
+                    <p class="footer__description">Your Travel Agency <br> For Amazing Trips</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Flight tickets</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="#about" class="footer__link">About us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Community</h3>
+                    <ul class="footer__links">
+                        <li><a href="https://api.whatsapp.com/send/?phone=447983512153&text&type=phone_number&app_absent=0" class="footer__link">Support Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/people/Roneiandnaomi-Tour/61576245973484/?mibextid=wwXIfr&rdid=cXL1GXzAVxOHEMYX&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18tvExvdGb%2F%3Fmibextid%3DwwXIfr" class="footer__social-link"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=447983512153&text&type=phone_number&app_absent=0" class="footer__social-link"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.instagram.com/roneiandnaomitour/?igsh=MTAzMjA4b2x4dDBvNg%3D%3D&utm_source=qr#" class="footer__social-link"><i class='bx bxl-instagram-alt'></i></a>
                 </div>
             </div>
-            <button class="carousel-button prev" aria-label="Previous slide">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-button next" aria-label="Next slide">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
-    </main>
 
-    <footer>
-        <p>&copy; 2025 R&N Tour — All rights reserved | Developed by Guilherme A. Silva <a href="https://www.linkedin.com/in/guilherme-silva-91220b327/" target="_blank" aria-label="Visit Guilherme's LinkedIn profile"><i class="fab fa-linkedin"></i></a></p>
-    </footer>
+            <p class="footer__copy">&#169; 2025 R&amp;N Tour. All rights reserved</p>
+        </footer>
 
-    <script src="./javascript/carousel.min.js" defer></script>
-    <script src="./javascript/navigation.min.js" defer></script>
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
 </body>
 </html>
-
