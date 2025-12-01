@@ -1,6 +1,7 @@
 # R&N Tour – Travel Agency Landing Page
 
-<img width="1719" height="805" alt="Screenshot 2025-11-30 at 09 48 47" src="https://github.com/user-attachments/assets/88ef6073-5592-48fb-bacd-84d8945388d5" />
+<img width="1719" height="805" alt="image" src="https://github.com/user-attachments/assets/b9c4632b-1f7e-4257-a836-ea56c94f19f4" />
+
 
 This repo contains a responsive landing page built for **R&N Tour**, a travel agency based in London that offers personalized trips to international destinations. The goal of this project is to present the agency, highlight featured destinations, and make it easy for users to contact the team via WhatsApp, email or phone.  [oai_citation:0‡guilhermedev25.github.io](https://guilhermedev25.github.io/ronei-and-naomi-tour/)  
 
