@@ -5,4 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/ronei-and-naomi-tour/',
   plugins: [react()],
+  base: '/ronei-and-naomi-tour/', // 
+
 })
